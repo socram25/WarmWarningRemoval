@@ -1,0 +1,47 @@
+{
+    "update_url": "https://clients2.google.com/service/update2/crx",
+    "manifest_version": 3,
+    "name": "Agent Risk Reminder Removal Extension",
+    "version": "2.1",
+    "description": "Easy Agent Warm/Risk Reminder Removal Extension on different Agents like Cnfans, Hoobuy and Mulebuy.",
+	"author": "TortillaReps",
+    "permissions": [
+        "activeTab",
+        "scripting",
+        "storage"
+    ],
+    "host_permissions": [
+        "https://*.cnfans.com/*",
+        "https://*.mulebuy.com/*",
+        "https://*.hoobuy.com/*"
+        
+    ],
+    "background": {
+        "service_worker": "background.js"
+    },
+    "action": {
+        "default_popup": "popup.html",
+        "default_icon": {
+            "16": "icons/icon16.png",
+            "48": "icons/icon48.png",
+            "128": "icons/icon128.png"
+        }
+    },
+    "icons": {
+        "16": "icons/icon16.png",
+        "48": "icons/icon48.png",
+        "128": "icons/icon128.png"
+    },
+    "content_scripts": [
+        {
+            "matches": [
+                "https://*.cnfans.com/*",
+                "https://*.mulebuy.com/*",
+                "https://*.hoobuy.com/*"
+            ],
+            "js": [
+                "content.js"
+            ]
+        }
+    ]
+}
