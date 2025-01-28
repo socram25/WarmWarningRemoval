@@ -1,0 +1,67 @@
+/* Reiniciar márgenes y relleno predeterminados */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo general del contenedor principal */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9; /* Fondo gris claro */
+    color: #2c2c2c; /* Color del texto principal */
+    padding: 20px; /* Espaciado interno del contenedor */
+    width: 320px; /* Ancho del popup */
+    border-radius: 10px; /* Bordes suavemente redondeados */
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15); /* Sombra para darle profundidad */
+}
+
+/* Estilo del título */
+h1 {
+    font-size: 22px;
+    margin-bottom: 12px;
+    color: #0056d2; /* Azul para destacar el título */
+}
+
+/* Estilo para párrafos */
+p {
+    font-size: 15px;
+    line-height: 1.5;
+    margin-bottom: 18px;
+}
+
+/* Caja informativa */
+.info-box {
+    border: 1px solid #bce2c7; /* Borde verde suave */
+    background-color: #e8f5e9; /* Fondo verde claro */
+    color: #1b5e20; /* Texto verde oscuro */
+    padding: 16px;
+    border-radius: 6px; /* Bordes ligeramente redondeados */
+    margin-top: 25px;
+}
+
+/* Botones */
+.btn {
+    display: inline-block; /* Mostrar como un bloque en línea */
+    background-color: #0056d2; /* Azul llamativo */
+    color: #ffffff; /* Texto blanco */
+    padding: 12px 18px; /* Espaciado interno del botón */
+    border: none; /* Sin borde */
+    border-radius: 6px; /* Bordes redondeados */
+    cursor: pointer; /* Cambia el cursor al pasar por encima */
+    text-align: center; /* Alineación centrada del texto */
+    text-decoration: none; /* Sin subrayado */
+    transition: background-color 0.25s ease; /* Animación para el cambio de color */
+}
+
+/* Efecto al pasar el ratón sobre los botones */
+.btn:hover {
+    background-color: #003c99; /* Azul más oscuro al pasar el ratón */
+}
+
+/* Estilo adicional para elementos de pie de página */
+.footer {
+    text-align: center; /* Centrar texto */
+    margin-top: 25px; /* Espacio superior */
+    font-size: 13px; /* Tamaño de fuente más pequeño */
+    color: #555555; /* Color de texto gris medio */

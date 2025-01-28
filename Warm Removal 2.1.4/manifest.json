@@ -1,0 +1,49 @@
+{
+    "update_url": "https://clients2.google.com/service/update2/crx",
+    "manifest_version": 3,
+    "name": "CNFans Warm Reminder Remover",
+    "version": "2.1.4",
+    "description": "Enhance your shopping experience with automated features, quality check photos button and more!",
+    "permissions": [
+        "activeTab",
+        "scripting",
+        "storage"
+    ],
+    "host_permissions": [
+        "https://*.cnfans.com/*",
+        "https://*.mulebuy.com/*",
+        "https://*.joyabuy.com/*",
+        "https://*.hoobuy.com/*",
+        "https://*.oopbuy.com/*"
+    ],
+    "background": {
+        "service_worker": "background.js"
+    },
+    "action": {
+        "default_popup": "popup.html",
+        "default_icon": {
+            "16": "icon16.png",
+            "48": "icon48.png",
+            "128": "icon128.png"
+        }
+    },
+    "icons": {
+        "16": "icon16.png",
+        "48": "icon48.png",
+        "128": "icon128.png"
+    },
+    "content_scripts": [
+        {
+            "matches": [
+                "https://*.cnfans.com/*",
+                "https://*.mulebuy.com/*",
+                "https://*.joyabuy.com/*",
+                "https://*.hoobuy.com/*",
+                "https://*.oopbuy.com/*"
+            ],
+            "js": [
+                "content.js"
+            ]
+        }
+    ]
+}
